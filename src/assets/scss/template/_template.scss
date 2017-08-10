@@ -16,6 +16,7 @@ h2 {
     }
     &.main-content {
         background: #F5F5F5;
+        border-bottom: 1px solid #E7E7E7;
     }
 }
 
@@ -55,6 +56,14 @@ th.last {
 
 .text-bold {
     font-weight: bold;
+}
+
+.header-top {
+    a {
+        color: #888888 !important;
+        font-size: 11px;
+        text-decoration: underline;
+    }
 }
 
 th.columns.header-logo {
@@ -101,6 +110,9 @@ th.columns.header-languages {
             padding: 0 7px;
         }
     }
+    &-img {
+      width: 308px;
+    }
 }
 
 table.button.default-btn table td {
@@ -133,13 +145,12 @@ table.button.default-btn table td {
 }
 
 .plans {
-    height: 625px;
-    &-title {
+     &-title {
         font-size: 28px;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
     }
     img {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
     p {
         font-size: 15px;
@@ -150,27 +161,31 @@ table.button.default-btn table td {
         text-transform: uppercase;
     }
     &-description {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
-    
+}
+
+table.callout {
+  height: 641px;
 }
 
 th.callout-inner {
-  padding-top: 36px;
-  padding-bottom: 36px;
-  border: 1px solid #D2D2D2;
-  h5, p {
-    padding: 0 15px;
-  }
-  &.color-success {
-    border: 2px solid $success-color;
-  }
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #D2D2D2;
+    h5,
+    p {
+        padding: 0 15px;
+    }
+    &.color-success {
+        border: 2px solid $success-color;
+    }
 }
 
 .footer {
     p,
     a {
-        color: #888888;
+        color: #CECECE;
         font-size: 11px;
     }
     a {
@@ -183,9 +198,12 @@ th.callout-inner {
     p {
         margin-bottom: 5px;
     }
-    td.columns, td.column, th.columns, th.column {
-      padding-bottom: 0 !important;
-      padding-top: 0 !important;
+    td.columns,
+    td.column,
+    th.columns,
+    th.column {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
     }
 }
 
@@ -197,7 +215,7 @@ p.footer-first {
     text-align: right;
     a {
         padding: 0 5px;
-        border-right: 1px solid #888888;
+        border-right: 1px solid #CECECE;
         &.last-child {
             border-right: none;
             padding-right: 0;

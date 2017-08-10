@@ -72,6 +72,7 @@ th.columns.header-logo {
 }
 
 th.columns.header-languages {
+  padding-top: 50px !important;
     padding-bottom: 29px;
 }
 
@@ -111,22 +112,23 @@ th.columns.header-languages {
         }
     }
     &-img {
-      width: 308px;
+        width: 308px;
+        cursor: default;
     }
 }
 
-table.button.default-btn table td {
+.default-btn {
+    text-transform: uppercase;
+    font-size: 21px;
+    background: #6AB436 url('http://s1.radikale.ru/uploads/2017/8/10/c0fd1148924db4c4d1352be4fb4b9022-full.png') 15px 50% no-repeat !important;
+    background-color: #6AB436 !important;
+    border-color: #6AB436;
+    padding: 15.5px 35px 15.5px 57.5px;
+    border-radius: 0;
     border: none;
-    background: transparent;
-    a {
-        text-transform: uppercase;
-        font-size: 21px;
-        background: #6AB436 url('../assets/img/arrow.png') 15px 50% no-repeat !important;
-        border-color: #6AB436;
-        padding: 15.5px 35px 15.5px 57.5px;
-        border-radius: 0;
-        border: none;
-    }
+    color: #fff;
+    font-weight: bold;
+    display: inline-block !important;
 }
 
 .main-content {
@@ -134,20 +136,23 @@ table.button.default-btn table td {
         font-size: 26px;
         line-height: 33px;
         margin-bottom: 25px;
+        text-transform: none !important;
     }
     &__description {
         p {
             font-size: 16px;
             line-height: 24px;
             margin-bottom: 47px;
+            text-transform: none !important;
         }
     }
 }
 
 .plans {
-     &-title {
+    &-title {
         font-size: 28px;
         margin-bottom: 26px;
+        text-transform: none !important;
     }
     img {
         margin-bottom: 16px;
@@ -155,6 +160,7 @@ table.button.default-btn table td {
     p {
         font-size: 15px;
         line-height: 26px;
+        text-transform: none !important;
     }
     h5 {
         font-size: 15px;
@@ -166,7 +172,7 @@ table.button.default-btn table td {
 }
 
 table.callout {
-  height: 641px;
+    height: 641px !important;
 }
 
 th.callout-inner {
@@ -185,14 +191,14 @@ th.callout-inner {
 .footer {
     p,
     a {
-        color: #CECECE;
-        font-size: 11px;
+        color: #CECECE !important;
+        font-size: 11px !important;
     }
     a {
-        text-decoration: underline;
+        text-decoration: underline !important;
         &.text-right {
-            display: block;
-            text-align: right;
+            display: block !important;
+            text-align: right !important;
         }
     }
     p {
@@ -215,10 +221,20 @@ p.footer-first {
     text-align: right;
     a {
         padding: 0 5px;
-        border-right: 1px solid #CECECE;
+        border-right: 1px solid #CECECE !important;
         &.last-child {
-            border-right: none;
-            padding-right: 0;
+            border-right: none !important;
+            padding-right: 0 !important;
         }
     }
+}
+
+.links {
+    display: inline-block;
+}
+
+p>a {
+    font-size: 11px !important;
+    color: #CECECE !important;
+    cursor: pointer !important;
 }

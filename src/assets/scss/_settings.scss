@@ -16,9 +16,9 @@
 // 1. Global
 // ---------
 
-$primary-color: #2199e8;
-$secondary-color: #777777;
-$success-color: #3adb76;
+$primary-color: #000;
+$secondary-color: #fff;
+$success-color: #6AB436;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #f3f3f3;
@@ -27,11 +27,11 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 646px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: $light-gray;
-$container-background: $white;
+$container-background: transparent;
 $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 3px;

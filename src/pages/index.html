@@ -1,55 +1,94 @@
----
-layout: index-layout
-subject: My Email Templates
----
-
-<spacer size="16"></spacer>
-
 <container>
-
-  <spacer size="24"></spacer>
-  
-  <row>
-    <columns small="12">
-
-    <p class="lead">Hi there!</p>
-    <p style="color: #484848; line-height: 1.5;">Thanks for downloading <a href="http://foundation.zurb.com/emails/docs/">Foundation for Emails!</a> Your days of coding up painful HTML emails are officially over. You’ll soon be cranking out some slick, responsive emails in no time! To help get you up and running, we've put together 11 templates for the most common email use cases including newsletters, transactional emails, and marketing blasts. Feel free to customize them to your hearts content.</p>
-
-    <spacer size="16"></spacer>
-
-    <center>
-      <menu class="vertical">
-        <item href="{{root}}basic.html" target="_blank">Basic Template</item>
-        <item href="{{root}}drip.html" target="_blank">Drip Template</item>
-        <item href="{{root}}hero.html" target="_blank">Hero Template</item>
-        <item href="{{root}}marketing.html" target="_blank">Marketing Template</item>
-        <item href="{{root}}newsletter.html" target="_blank">Newsletter Template</item>
-        <item href="{{root}}newsletter-2.html" target="_blank">Newsletter 2 Template</item>
-        <item href="{{root}}order.html" target="_blank">Order Template</item>
-        <item href="{{root}}password.html" target="_blank">Password Template</item>
-        <item href="{{root}}sidebar.html" target="_blank">Sidebar Template</item>
-        <item href="{{root}}sidebar-hero.html" target="_blank">Sidebar Hero Template</item>
-        <item href="{{root}}welcome.html" target="_blank">Welcome Template</item>
-      </menu>
-    </center>
-
-    <spacer size="16"></spacer>
-
-    <p>Happy Coding,</p>
-    <p>The Foundation Team</p>
-
-
-    <spacer size="16"></spacer>
-
-    </columns>
-  </row>
+    <row>
+        <columns large="1">
+            <h6>Top line</h6>
+        </columns>
+        <columns large="11">
+            <h6 class="text-right">Can’t view this e-mail? Try the <a href="#">Web version</a>.</h6>
+        </columns>
+    </row>
 </container>
-
-<spacer size="16"></spacer>
-
-<center>
-  <small>Keep on keepin' on. &lt;3 <a style="color: #cacaca; text-decoration: underline;" href="http://zurb.com/">ZURB</a> </small>
-</center>
-
-<spacer size="16"></spacer>
-
+<wrapper class="header">
+    <container>
+        <row>
+            <columns large="6">
+                <img src="assets/img/logo.png" alt="logo" />
+            </columns>
+            <columns large="6">
+                <img class="float-right" src="assets/img/languages.png" alt="languages" />
+            </columns>
+        </row>
+    </container>
+</wrapper>
+<container class="info">
+    <row>
+        <columns large="6">
+            <img src="assets/img/info.png" alt="info" />
+        </columns>
+        <columns large="6">
+            <h2 class="color-red text-center">For a limited time only</h2>
+            <p class="text-center">Upgrade to
+                <br/> Architect Pro 5
+                <br/>for the <span class="color-red">SAME PRICE</span>
+                <br/> as Standard</p>
+            <button href="#">view offer</button>
+        </columns>
+    </row>
+</container>
+<wrapper class="main-content">
+    <container>
+        <row>
+            <columns>
+                <h1 class="text-center">[Name], you can now enjoy the perks of the updated and advanced Pro package for less</h1>
+                <p class="text-center">Now's your chance to claim your special offer. Get your hands on all the Pro features to take care of all your PDF needs.
+                </p>
+            </columns>
+        </row>
+        <row>
+            <columns large="6">
+                <callout>
+                    <h2>STANDARD</h2>
+                    <img src="assets/img/plan-item.png" alt="item" />
+                    <p>PDF Architect 5 Standard gives you access to the most essential PDF features, including creating and converting PDFs, editing text and images, inserting links and headers & footers, and more.</p>
+                    <h5>MODULES INCLUDED:</h5>
+                    <p>View, Create, Convert, Edit, Insert</p>
+                </callout>
+            </columns>
+            <columns large="6">
+                <callout>
+                    <h2>PROFESSIONAL</h2>
+                    <img src="assets/img/plan-item.png" alt="item" />
+                    <p>It includes all the basic features, plus it allows you to review & annotate your work, create digital forms, and secure & sign your PDFs.</p>
+                    <h5>MODULES INCLUDED:</h5>
+                    <p>View, Create, Convert, Edit, Insert, Review, Forms, Secure & Sign</p>
+                </callout>
+            </columns>
+        </row>
+        <row>
+            <columns>
+                <button href="#">view offer</button>
+            </columns>
+        </row>
+    </container>
+</wrapper>
+<container class="footer">
+    <row>
+        <columns>
+            <p>You're receiving this because you registered on the PDF Architect mailing list with <<customer email address>>. 
+            This is an automated message - do not reply to the sender. If you wish to reply to this email, please contact our <a href="#">support</a>.</p>
+            <p>To update your subscription and change your profile, <a href="#">click here</a>.</p>
+            <p>If you no longer wish to receive emails from us, please <a href="#">click here</a> to unsubscribe. </p>
+            <a href="#">Change your mailing preferences</a>
+        </columns>
+    </row>
+    <row>
+        <columns large="6">
+            <p>Neuer Pferdemarkt 1, 20359 Hamburg, Germany</p>
+        </columns>
+        <columns large="6">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Unsubscribe</a>
+        </columns>
+    </row>
+</container>

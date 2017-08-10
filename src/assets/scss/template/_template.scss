@@ -1,40 +1,44 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
-// Body Styles 
 body,
 html,
 .body {
     background: #FFFFFF !important;
     -webkit-font-smoothing: antialiased;
 }
-h6, h2 {
-  margin-bottom: 0;
+
+h6,
+h2 {
+    margin-bottom: 0;
 }
+
 .wrapper {
     &.header {
         background: #242424;
     }
     &.main-content {
-      background: #F5F5F5;
+        background: #F5F5F5;
     }
 }
 
-td.columns, td.column, th.columns, th.column {
-  padding-top: 8px;
-  padding-bottom: 8px;
+td.columns,
+td.column,
+th.columns,
+th.column {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-th.columns, td.columns {
-  padding-left: 5px !important;
-  padding-right: 5px !important;
+th.columns,
+td.columns {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
 }
 
 th.first {
-  padding-left: 10px !important;
+    padding-left: 10px !important;
 }
 
 th.last {
-  padding-right: 10px !important;
+    padding-right: 10px !important;
 }
 
 .color-red {
@@ -42,56 +46,161 @@ th.last {
 }
 
 .color-gray {
-  color: #888888;
+    color: #888888;
 }
 
 .small-text {
-  font-size: 11px;
+    font-size: 11px;
 }
 
 .text-bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 th.columns.header-logo {
-  padding-top: 26px;
-  padding-bottom: 22px;
+    padding-top: 26px;
+    padding-bottom: 22px;
 }
 
 th.columns.header-languages {
-  padding-bottom: 29px;
+    padding-bottom: 29px;
 }
 
-.container.info > tbody > tr> td {
-  padding-top: 50px;
-  padding-bottom: 33px;
+.container.info>tbody>tr>td {
+    padding-top: 50px;
+    padding-bottom: 33px;
 }
 
-.container.main-content__container > tbody > tr> td {
-  padding-top: 50px;
-  padding-bottom: 33px;
+.container.main-content__container>tbody>tr>td {
+    padding-top: 50px;
+    padding-bottom: 33px;
 }
 
-.container.footer > tbody > tr> td {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.container.footer>tbody>tr>td {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .info {
-  &-title {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-  &-description {
+    &-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    &-description {
+        p {
+            font-size: 28px;
+            margin-bottom: 35px;
+        }
+        span {
+            text-transform: uppercase;
+            background-color: #EEEEEE;
+            line-height: 40px;
+            letter-spacing: -0.025em;
+            padding: 0 7px;
+        }
+    }
+}
+
+table.button.default-btn table td {
+    border: none;
+    background: transparent;
+    a {
+        text-transform: uppercase;
+        font-size: 21px;
+        background: #6AB436 url('../assets/img/arrow.png') 15px 50% no-repeat !important;
+        border-color: #6AB436;
+        padding: 15.5px 35px 15.5px 57.5px;
+        border-radius: 0;
+        border: none;
+    }
+}
+
+.main-content {
+    &__title {
+        font-size: 26px;
+        line-height: 33px;
+        margin-bottom: 25px;
+    }
+    &__description {
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 47px;
+        }
+    }
+}
+
+.plans {
+    height: 625px;
+    &-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    img {
+        margin-bottom: 20px;
+    }
     p {
-      font-size: 28px;
+        font-size: 15px;
+        line-height: 26px;
     }
-    span {
-      text-transform: uppercase;
-      background-color: #EEEEEE;
-      line-height: 40px;
+    h5 {
+        font-size: 15px;
+        text-transform: uppercase;
     }
+    &-description {
+        margin-bottom: 40px;
+    }
+    
+}
+
+th.callout-inner {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border: 1px solid #D2D2D2;
+  h5, p {
+    padding: 0 15px;
   }
+  &.color-success {
+    border: 2px solid $success-color;
+  }
+}
+
+.footer {
+    p,
+    a {
+        color: #888888;
+        font-size: 11px;
+    }
+    a {
+        text-decoration: underline;
+        &.text-right {
+            display: block;
+            text-align: right;
+        }
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    td.columns, td.column, th.columns, th.column {
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+    }
+}
+
+p.footer-first {
+    margin-bottom: 30px;
+}
+
+.footer-links--right th {
+    text-align: right;
+    a {
+        padding: 0 5px;
+        border-right: 1px solid #888888;
+        &.last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+    }
 }

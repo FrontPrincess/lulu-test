@@ -1,20 +1,20 @@
 <container>
     <row>
-        <columns large="1">
-            <h6>Top line</h6>
+        <columns large="2">
+            <h6 class="color-gray small-text text-bold">Top line</h6>
         </columns>
-        <columns large="11">
-            <h6 class="text-right">Can’t view this e-mail? Try the <a href="#">Web version</a>.</h6>
+        <columns large="10">
+            <h6 class="text-right color-gray small-text">Can’t view this e-mail? Try the <a href="#">Web version</a>.</h6>
         </columns>
     </row>
 </container>
 <wrapper class="header">
     <container>
         <row>
-            <columns large="6">
+            <columns large="6" class="header-logo">
                 <img src="assets/img/logo.png" alt="logo" />
             </columns>
-            <columns large="6">
+            <columns large="6" valign="bottom" class="header-languages">
                 <img class="float-right" src="assets/img/languages.png" alt="languages" />
             </columns>
         </row>
@@ -25,9 +25,9 @@
         <columns large="6">
             <img src="assets/img/info.png" alt="info" />
         </columns>
-        <columns large="6">
-            <h2 class="color-red text-center">For a limited time only</h2>
-            <p class="text-center">Upgrade to
+        <columns large="6" class="info-description">
+            <h2 class="color-red text-center info-title">For a limited time only</h2>
+            <p class="text-center text-bold">Upgrade to
                 <br/> Architect Pro 5
                 <br/>for the <span class="color-red">SAME PRICE</span>
                 <br/> as Standard</p>
@@ -36,7 +36,7 @@
     </row>
 </container>
 <wrapper class="main-content">
-    <container>
+    <container class="main-content__container">
         <row>
             <columns>
                 <h1 class="text-center">[Name], you can now enjoy the perks of the updated and advanced Pro package for less</h1>
@@ -74,7 +74,7 @@
 <container class="footer">
     <row>
         <columns>
-            <p>You're receiving this because you registered on the PDF Architect mailing list with <<customer email address>>. 
+            <p>You're receiving this because you registered on the PDF Architect mailing list with &laquo;customer email address&raquo;. 
             This is an automated message - do not reply to the sender. If you wish to reply to this email, please contact our <a href="#">support</a>.</p>
             <p>To update your subscription and change your profile, <a href="#">click here</a>.</p>
             <p>If you no longer wish to receive emails from us, please <a href="#">click here</a> to unsubscribe. </p>

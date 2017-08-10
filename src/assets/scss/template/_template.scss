@@ -5,8 +5,11 @@ body,
 html,
 .body {
     background: #FFFFFF !important;
+    -webkit-font-smoothing: antialiased;
 }
-
+h6, h2 {
+  margin-bottom: 0;
+}
 .wrapper {
     &.header {
         background: #242424;
@@ -16,6 +19,79 @@ html,
     }
 }
 
+td.columns, td.column, th.columns, th.column {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+th.columns, td.columns {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+th.first {
+  padding-left: 10px !important;
+}
+
+th.last {
+  padding-right: 10px !important;
+}
+
 .color-red {
     color: #db2325;
+}
+
+.color-gray {
+  color: #888888;
+}
+
+.small-text {
+  font-size: 11px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+th.columns.header-logo {
+  padding-top: 26px;
+  padding-bottom: 22px;
+}
+
+th.columns.header-languages {
+  padding-bottom: 29px;
+}
+
+.container.info > tbody > tr> td {
+  padding-top: 50px;
+  padding-bottom: 33px;
+}
+
+.container.main-content__container > tbody > tr> td {
+  padding-top: 50px;
+  padding-bottom: 33px;
+}
+
+.container.footer > tbody > tr> td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.info {
+  &-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  &-description {
+    p {
+      font-size: 28px;
+    }
+    span {
+      text-transform: uppercase;
+      background-color: #EEEEEE;
+      line-height: 40px;
+    }
+  }
 }
